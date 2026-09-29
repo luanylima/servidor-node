@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossos Planos | Plataforma de Idiomas</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body class="pagina-planos">
+
+    <header class="cabecalho-planos">
+        <a href="index.html" class="logo-planos">
+            Multi<span>Línguas</span>
+        </a>
+
+        <nav class="navegacao">
+            <a href="index.html">Início</a>
+            <a href="nossosrecursos.html">Recursos</a>
+            <a href="comofunciona.html">Como funciona</a>
+            <a href="sobre.html">Sobre o projeto</a>
+            <a href="planos.html" class="ativo">Nossos planos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introducao-planos">
+            <span class="etiqueta-planos">APRENDA SEM FRONTEIRAS</span>
+
+            <h1>Escolha o plano ideal para <span>você</span></h1>
+
+            <p>
+                Pratique idiomas, converse com mais confiança
+                e acompanhe sua evolução em um só lugar.
+            </p>
+        </section>
+
+        <section class="lista-planos">
+
+            <!-- PLANO GRATUITO -->
+            <article class="card-plano">
+                <div class="icone-plano">🌱</div>
+
+                <h2>Gratuito</h2>
+                <p class="descricao-plano">
+                    Para começar sua jornada nos idiomas.
+                </p>
+
+                <div class="preco-plano">
+                    <strong>R$ 0</strong>
+                    <span>/ sempre</span>
+                </div>
+
+                <ul class="beneficios-plano">
+                    <li>✓ Acesso inicial à plataforma</li>
+                    <li>✓ Prática de vocabulário</li>
+                    <li>✓ Recursos básicos de tradução</li>
+                    <li>✓ Acompanhamento inicial</li>
+                </ul>
+
+                <button class="botao-plano"
+                    onclick="selecionarPlano('Gratuito')">
+                    Começar grátis
+                </button>
+            </article>
+
+            <!-- PLANO ESTUDANTE -->
+            <article class="card-plano destaque-plano">
+                <span class="selo-plano">PARA ESTUDANTES</span>
+
+                <div class="icone-plano">🚀</div>
+
+                <h2>Estudante VIP</h2>
+                <p class="descricao-plano">
+                    Para quem quer evoluir e praticar mais.
+                </p>
+
+                <div class="preco-plano">
+                    <strong>R$ 19,90</strong>
+                    <span>/ mês</span>
+                </div>
+
+                <ul class="beneficios-plano">
+                    <li>✓ Recursos ampliados de tradução</li>
+                    <li>✓ Prática de conversação</li>
+                    <li>✓ Dicionário personalizado</li>
+                    <li>✓ Relatórios de evolução</li>
+                    <li>✓ Histórico de aprendizagem</li>
+                </ul>
+
+                <button class="botao-plano botao-destaque"
+                    onclick="selecionarPlano('Estudante VIP')">
+                    Escolher VIP
+                </button>
+            </article>
+
+            <!-- PLANO INSTITUCIONAL -->
+            <article class="card-plano">
+                <div class="icone-plano">🎓</div>
+
+                <h2>Institucional</h2>
+                <p class="descricao-plano">
+                    Para escolas, professores e turmas.
+                </p>
+
+                <div class="preco-plano">
+                    <strong>Sob consulta</strong>
+                </div>
+
+                <ul class="beneficios-plano">
+                    <li>✓ Painel para professores</li>
+                    <li>✓ Relatórios de desempenho</li>
+                    <li>✓ Monitoramento de vocabulário</li>
+                    <li>✓ Acompanhamento das turmas</li>
+                    <li>✓ Gestão de estudantes</li>
+                </ul>
+
+                <button class="botao-plano"
+                    onclick="selecionarPlano('Institucional')">
+                    Tenho interesse
+                </button>
+            </article>
+
+        </section>
+
+        <section class="duvidas-planos">
+            <h2>Aprender um idioma ficou mais simples.</h2>
+            <p>
+                Desenvolva seu vocabulário, pratique conversação
+                e acompanhe seu progresso no seu ritmo.
+            </p>
+
+            <a href="comofunciona.html" class="link-como-funciona">
+                Descubra como funciona →
+            </a>
+        </section>
+    </main>
+
+    <footer class="rodape-planos">
+        <p>© 2026 MultiLínguas — Aprender conecta o mundo.</p>
+    </footer>
+
+    <script>
+        function selecionarPlano(nome) {
+            alert(
+                "Você selecionou o plano " + nome +
+                "! A próxima etapa será implementada em breve."
+            );
+        }
+    </script>
+
+</body>
+</html>

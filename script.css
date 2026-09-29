@@ -583,3 +583,303 @@ h2 span {
     margin-left: 0;
   }
 }
+
+/* ===== TELA NOSSOS PLANOS ===== */
+
+.pagina-planos {
+    margin: 0;
+    background: #f7f8ff;
+    color: #252747;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+
+.cabecalho-planos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 22px 7%;
+    background: #ffffff;
+    border-bottom: 1px solid #e9e9f5;
+}
+
+.logo-planos {
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #292d59;
+    white-space: nowrap;
+}
+
+.logo-planos span {
+    color: #7167e8;
+}
+
+.pagina-planos .navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.pagina-planos .navegacao a {
+    color: #555873;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.pagina-planos .navegacao a:hover,
+.pagina-planos .navegacao a.ativo {
+    color: #7167e8;
+}
+
+/* Apresentação */
+
+.introducao-planos {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 65px 20px 35px;
+    text-align: center;
+}
+
+.etiqueta-planos {
+    color: #7167e8;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.introducao-planos h1 {
+    margin: 18px 0;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+}
+
+.introducao-planos h1 span {
+    color: #7167e8;
+}
+
+.introducao-planos p {
+    color: #74758e;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Cards */
+
+.lista-planos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 20px 25px 70px;
+    align-items: stretch;
+}
+
+.card-plano {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #e7e7f3;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(49, 46, 100, 0.05);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card-plano:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(49, 46, 100, 0.10);
+}
+
+.icone-plano {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    background: #f0efff;
+    border-radius: 14px;
+    font-size: 24px;
+}
+
+.card-plano h2 {
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.descricao-plano {
+    min-height: 44px;
+    margin: 0;
+    color: #777991;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.preco-plano {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+    min-height: 65px;
+    margin: 25px 0 15px;
+}
+
+.preco-plano strong {
+    font-size: 27px;
+    color: #292d59;
+}
+
+.preco-plano span {
+    color: #777991;
+    font-size: 13px;
+}
+
+.beneficios-plano {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 10px 0 28px;
+    padding: 0;
+    list-style: none;
+    color: #555873;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.beneficios-plano li::first-letter {
+    color: #7167e8;
+}
+
+/* Plano em destaque */
+
+.destaque-plano {
+    border: 2px solid #7167e8;
+}
+
+.selo-plano {
+    position: absolute;
+    top: -13px;
+    right: 18px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #7167e8;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Botões */
+
+.botao-plano {
+    width: 100%;
+    margin-top: auto;
+    padding: 14px 16px;
+    border: 1px solid #7167e8;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #7167e8;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+}
+
+.botao-plano:hover {
+    background: #f0efff;
+}
+
+.botao-destaque {
+    background: #7167e8;
+    color: #ffffff;
+}
+
+.botao-destaque:hover {
+    background: #554bc7;
+}
+
+/* Seção inferior */
+
+.duvidas-planos {
+    padding: 45px 20px;
+    background: #eeedff;
+    text-align: center;
+}
+
+.duvidas-planos h2 {
+    font-size: 25px;
+}
+
+.duvidas-planos p {
+    color: #686982;
+    line-height: 1.7;
+}
+
+.link-como-funciona {
+    display: inline-block;
+    margin-top: 12px;
+    color: #6258d5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-como-funciona:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+
+.rodape-planos {
+    padding: 22px;
+    background: #ffffff;
+    color: #777991;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Responsividade para celulares */
+
+@media (max-width: 900px) {
+    .cabecalho-planos {
+        flex-direction: column;
+    }
+
+    .pagina-planos .navegacao {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .lista-planos {
+        grid-template-columns: 1fr;
+        max-width: 460px;
+    }
+
+    .introducao-planos {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-planos {
+        padding: 20px 15px;
+    }
+
+    .pagina-planos .navegacao {
+        gap: 12px;
+    }
+
+    .pagina-planos .navegacao a {
+        font-size: 12px;
+    }
+
+    .lista-planos {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
