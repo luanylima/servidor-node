@@ -1273,3 +1273,9 @@ p {
     width: auto;
   }
 }
+.imagem-hero {
+  width: 100%;
+  max-width: 500px; /* Ajuste o tamanho máximo desejado */
+  height: auto;
+  display: block;
+}
