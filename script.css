@@ -883,3 +883,487 @@ h2 span {
         padding-left: 16px;
     }
 }
+/* =========================================================
+   MULTILÍNGUAS — PÁGINA DE PLANOS
+   Identidade visual verde
+   ========================================================= */
+
+   .pagina-planos {
+    margin: 0;
+    min-height: 100vh;
+    background: #f7f8f1;
+    color: #17231d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.pagina-planos .cabecalho-planos {
+    height: 72px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f7f8f1;
+    border-bottom: 1px solid #dfe5d9;
+}
+
+
+/* LOGO */
+
+.pagina-planos .logo-planos {
+    color: #17231d;
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.pagina-planos .logo-planos span {
+    color: #80ad5a;
+}
+
+
+/* MENU */
+
+.pagina-planos .navegacao {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.pagina-planos .navegacao a {
+    color: #334238;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+.pagina-planos .navegacao a:hover {
+    color: #2f6548;
+}
+
+.pagina-planos .navegacao a.ativo {
+    color: #2f6548;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   INTRODUÇÃO
+   ========================================================= */
+
+.pagina-planos .introducao-planos {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 72px 24px 48px;
+
+    text-align: center;
+}
+
+.pagina-planos .etiqueta-planos {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #5d923d;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.pagina-planos .introducao-planos h1 {
+    margin: 0;
+
+    color: #17231d;
+
+    font-size: clamp(38px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.pagina-planos .introducao-planos h1 span {
+    color: #80ad5a;
+}
+
+.pagina-planos .introducao-planos p {
+    max-width: 620px;
+    margin: 22px auto 0;
+
+    color: #64736a;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.pagina-planos .lista-planos {
+    width: min(1050px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+.pagina-planos .card-plano {
+    position: relative;
+
+    padding: 30px 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid #dfe5d9;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(38, 67, 47, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.pagina-planos .card-plano:hover {
+    transform: translateY(-5px);
+
+    border-color: #a8c58e;
+
+    box-shadow: 0 16px 35px rgba(38, 67, 47, 0.10);
+}
+
+
+/* =========================================================
+   ÍCONE
+   ========================================================= */
+
+.pagina-planos .icone-plano {
+    width: 46px;
+    height: 46px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef4e8;
+
+    border-radius: 13px;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   TÍTULOS
+   ========================================================= */
+
+.pagina-planos .card-plano h2 {
+    margin: 0 0 8px;
+
+    color: #17231d;
+
+    font-size: 21px;
+    letter-spacing: -0.5px;
+}
+
+.pagina-planos .descricao-plano {
+    min-height: 44px;
+    margin: 0;
+
+    color: #708078;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PREÇO
+   ========================================================= */
+
+.pagina-planos .preco-plano {
+    margin: 28px 0 26px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.pagina-planos .preco-plano strong {
+    color: #24583e;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.pagina-planos .preco-plano span {
+    color: #849087;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+   ========================================================= */
+
+.pagina-planos .beneficios-plano {
+    padding: 0;
+    margin: 0 0 30px;
+
+    list-style: none;
+}
+
+.pagina-planos .beneficios-plano li {
+    margin-bottom: 15px;
+
+    color: #526159;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.pagina-planos .beneficios-plano li::first-letter {
+    color: #6ea44b;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+.pagina-planos .botao-plano {
+    width: 100%;
+    min-height: 46px;
+
+    margin-top: auto;
+
+    border: 1px solid #7cae5b;
+    border-radius: 9px;
+
+    background: transparent;
+    color: #568b3c;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.pagina-planos .botao-plano:hover {
+    background: #eef5e9;
+    border-color: #639947;
+
+    color: #376d43;
+}
+
+.pagina-planos .botao-plano:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   PLANO VIP — DESTAQUE
+   ========================================================= */
+
+.pagina-planos .destaque-plano {
+    border: 1.5px solid #70a94e;
+
+    box-shadow:
+        0 15px 40px rgba(71, 119, 67, 0.12);
+}
+
+.pagina-planos .destaque-plano:hover {
+    border-color: #4f8b43;
+
+    box-shadow:
+        0 18px 45px rgba(71, 119, 67, 0.18);
+}
+
+
+/* SELO */
+
+.pagina-planos .selo-plano {
+    position: absolute;
+
+    top: -13px;
+    right: 20px;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #4d8950;
+    color: #ffffff;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+
+/* BOTÃO VIP */
+
+.pagina-planos .botao-destaque {
+    background: #316448;
+    border-color: #316448;
+
+    color: #ffffff;
+}
+
+.pagina-planos .botao-destaque:hover {
+    background: #24583e;
+    border-color: #24583e;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SEÇÃO FINAL
+   ========================================================= */
+
+.pagina-planos .duvidas-planos {
+    max-width: 700px;
+
+    margin: 80px auto 0;
+    padding: 60px 24px;
+
+    text-align: center;
+}
+
+.pagina-planos .duvidas-planos h2 {
+    margin: 0 0 15px;
+
+    color: #17231d;
+
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+.pagina-planos .duvidas-planos p {
+    margin: 0 auto 22px;
+
+    color: #68766e;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.pagina-planos .link-como-funciona {
+    color: #4d8b45;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #9bbb88;
+    padding-bottom: 3px;
+}
+
+.pagina-planos .link-como-funciona:hover {
+    color: #24583e;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.pagina-planos .rodape-planos {
+    padding: 30px 20px;
+
+    border-top: 1px solid #dfe5d9;
+
+    text-align: center;
+
+    background: #f7f8f1;
+}
+
+.pagina-planos .rodape-planos p {
+    margin: 0;
+
+    color: #78847d;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .pagina-planos .cabecalho-planos {
+        height: auto;
+        padding: 20px 5%;
+
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .pagina-planos .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .pagina-planos .lista-planos {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .pagina-planos .introducao-planos {
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .pagina-planos .navegacao {
+        gap: 12px;
+    }
+
+    .pagina-planos .navegacao a {
+        font-size: 12px;
+    }
+
+    .pagina-planos .introducao-planos h1 {
+        font-size: 38px;
+    }
+
+    .pagina-planos .card-plano {
+        padding: 25px 20px;
+    }
+}
