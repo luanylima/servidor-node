@@ -1,0 +1,62 @@
+/* CYBERPUNK LIGHT MODE — PALETA AZUL + ROXO NEON */
+:root {
+  --branco-industrial: #f7f9ff;
+  --cinza-claro: #eaf0ff;
+  --cinza-medio: #cbd7f2;
+  --texto-principal: #080812;
+  --texto-secundario: #272746;
+  --texto-terciario: #5d6380;
+  --borda-forte: #000000;
+  --borda-suave: #9ba9ce;
+  --neon-cyan: #00d9ff;
+  --neon-blue: #1769ff;
+  --neon-purple: #7a2cff;
+  --neon-violet: #b000ff;
+  --neon-pink: #ff2bd6;
+  --neon-yellow: #ffd000;
+  --neon-green: #39ff14;
+  --sombra-forte: 5px 5px 0 #000;
+  --sombra-media: 3px 3px 0 #000;
+  --glow-cyan: 0 0 18px rgba(0,217,255,.55);
+  --glow-purple: 0 0 18px rgba(122,44,255,.5);
+  --glow-pink: 0 0 18px rgba(255,43,214,.45);
+}
+
+body,
+.pagina-planos { background-color: var(--branco-industrial); color: var(--texto-principal); background-image: linear-gradient(rgba(23,105,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(122,44,255,.06) 1px, transparent 1px); background-size: 42px 42px; }
+body::before { opacity: .18; }
+h1,h2,h3,.modal-titulo { color: var(--texto-principal); text-shadow: 2px 2px 0 rgba(122,44,255,.12); }
+.logo, .pagina-planos .logo-planos { color: var(--neon-purple); text-shadow: 0 0 10px rgba(122,44,255,.4); }
+.logo span:last-child, .pagina-planos .logo-planos span { color: var(--neon-pink); }
+.logo-simbolo { background: var(--neon-cyan); box-shadow: var(--sombra-media), var(--glow-cyan); }
+.cabecalho, .pagina-planos .cabecalho-planos { background: rgba(247,249,255,.95); border-color: var(--borda-forte); }
+.navegacao a:hover, .pagina-planos .navegacao a:hover, .pagina-planos .navegacao a.ativo { color: var(--neon-purple); border-color: var(--neon-purple); }
+.botao, .botao-plano, .link-como-funciona { border-color: var(--borda-forte); box-shadow: var(--sombra-media); }
+.botao::before { background: var(--neon-blue); }
+.botao-principal, .botao-plano { background: var(--neon-purple); }
+.botao-principal::before, .botao-plano::before { background: var(--neon-pink); }
+.botao-destaque { background: var(--neon-blue); box-shadow: var(--sombra-media), var(--glow-cyan); }
+.botao-destaque::before { background: var(--neon-pink); }
+.hero-ilustracao { background: linear-gradient(135deg, rgba(0,217,255,.14), rgba(122,44,255,.16)); border-color: var(--borda-forte); box-shadow: var(--sombra-forte), var(--glow-purple); }
+.globo { background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple) 58%, var(--neon-pink)); border-color: var(--borda-forte); box-shadow: var(--sombra-forte), var(--glow-purple); }
+.etiqueta-planos { color: var(--neon-blue); border-color: var(--borda-forte); box-shadow: var(--sombra-media), var(--glow-cyan); }
+.introducao-planos h1 span { color: var(--neon-purple); text-shadow: 0 0 16px rgba(122,44,255,.45); }
+.card-plano, .cartao-recurso { background: rgba(247,249,255,.96); border-color: var(--borda-forte); box-shadow: var(--sombra-media); }
+.card-plano:hover, .cartao-recurso:hover { border-color: var(--neon-blue); box-shadow: var(--sombra-forte), var(--glow-cyan); }
+.card-plano:nth-child(1) .imagem-plano { background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan)); }
+.card-plano:nth-child(2) .imagem-plano { background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink)); }
+.card-plano:nth-child(3) .imagem-plano { background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple)); }
+.card-plano h2, .cartao-recurso h3 { color: var(--neon-purple); }
+.preco-plano strong { color: var(--neon-blue); text-shadow: 0 0 12px rgba(0,217,255,.55); }
+.beneficios-plano li::before { color: var(--neon-pink); }
+.selo-plano { background: var(--neon-yellow); border-color: var(--borda-forte); }
+.destaque-plano { border-color: var(--neon-purple); box-shadow: var(--sombra-forte), var(--glow-purple); }
+.duvidas-planos { background: rgba(234,240,255,.9); border-color: var(--borda-forte); }
+.link-como-funciona { color: var(--neon-purple); border-color: var(--neon-purple); }
+.link-como-funciona:hover { background: var(--neon-purple); color: #fff; box-shadow: var(--sombra-media), var(--glow-purple); }
+.rodape-planos { background: #080812; border-color: var(--neon-cyan); }
+.modal-conteudo { border-color: var(--neon-purple); box-shadow: var(--sombra-forte), var(--glow-purple); }
+.modal-titulo { color: var(--neon-purple); }
+.modal-confirmar { background: var(--neon-yellow); color: #000; }
+.form-cartao input:focus { border-color: var(--neon-blue); box-shadow: 0 0 0 3px rgba(0,217,255,.2); }
+@media (max-width: 768px) { .pagina-planos .cabecalho-planos { background: var(--branco-industrial); } }
