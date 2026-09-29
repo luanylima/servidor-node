@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MultiLínguas - Acesso retro-futurista para aprendizado de idiomas."
+    />
+    <title>MultiLínguas | Acesso</title>
+    <link rel="stylesheet" href="script.css" />
+  </head>
+  <body class="pagina-login">
+    <main class="login-shell screen-frame" data-serial="ML-LOGIN-1984" data-serial-left="TRAVEL // CODE 07">
+      <div class="scanlines" aria-hidden="true"></div>
+      <div class="login-grid" aria-hidden="true"></div>
+
+      <section class="login-visual" aria-label="Seção visual do painel de viagem">
+        <div class="serial-top">SYS // LANGUAGE NAVIGATION UNIT</div>
+
+        <div class="radar-map" aria-hidden="true">
+          <span class="radar-coordinate top-left">N 38°53'</span>
+          <span class="radar-coordinate top-right">W 77°02'</span>
+          <span class="radar-coordinate bottom-left">SECTOR 07</span>
+          <span class="radar-coordinate bottom-right">READY</span>
+          <span class="radar-sweep"></span>
+          <span class="radar-destination" style="left: 64%; top: 37%;"></span>
+          <span class="radar-destination radar-destination-secondary" style="left: 28%; top: 68%;"></span>
+        </div>
+
+        <div class="travel-image-slot">
+          <span class="stamp-mark">TRAVEL<br />ARCHIVE</span>
+          <p>INSIRA AQUI SUA IMAGEM DE VIAGEM</p>
+          <small>Use uma imagem de destino, paisagem ou mapa.</small>
+        </div>
+
+        <div class="coordinates">LAT 38.8977 // LONG -77.0365 // ROUTE ACTIVE</div>
+      </section>
+
+      <section class="login-panel">
+        <div class="login-brand">
+          <span class="brand-symbol">M</span>
+          <span>Multi<span>Línguas</span></span>
+        </div>
+
+        <p class="eyebrow">MISSION 01 / LANGUAGE TRAINING</p>
+        <h1>ACESSO<br /><span>CONCEDIDO?</span></h1>
+        <p class="login-copy">
+          Identifique-se para iniciar sua rota de aprendizagem e decodificar
+          novos idiomas.
+        </p>
+
+        <div class="status-line">
+          <span class="led-indicator led-on"></span>
+          SISTEMA ONLINE <span class="status-code">[OK-1986]</span>
+        </div>
+
+        <form class="login-form" id="formLogin">
+          <label for="usuario">IDENTIFICAÇÃO / AGENT_ID</label>
+          <input
+            id="usuario"
+            name="usuario"
+            type="text"
+            placeholder="DIGITE SEU NOME"
+            autocomplete="username"
+            required
+          />
+
+          <label for="senha">CÓDIGO DE ACESSO / PASSWORD</label>
+          <input
+            id="senha"
+            name="senha"
+            type="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+            required
+          />
+
+          <button class="botao botao-principal login-button" type="submit">
+            INICIAR MISSÃO <span>→</span>
+          </button>
+        </form>
+
+        <p class="login-help">
+          PRIMEIRO ACESSO? <a href="index.html">CONSULTE O TERMINAL PRINCIPAL</a>
+        </p>
+        <p class="login-note">NENHUM DADO SENSÍVEL É ARMAZENADO NESTA DEMONSTRAÇÃO.</p>
+      </section>
+    </main>
+
+    <div class="mensagem" id="mensagem" role="status" aria-live="polite"></div>
+
+    <script>
+      document.getElementById('formLogin').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const nome = document.getElementById('usuario').value.trim();
+        const mensagem = document.getElementById('mensagem');
+        mensagem.textContent = `ACESSO AUTORIZADO, ${nome.toUpperCase()}. REDIRECIONANDO...`;
+        mensagem.classList.add('exibir');
+        window.setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 700);
+      });
+    </script>
+  </body>
+</html>
