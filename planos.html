@@ -1,155 +1,300 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nossos Planos | Plataforma de Idiomas</title>
+    <title>Nossos Planos | MultiLínguas</title>
     <link rel="stylesheet" href="script.css">
 </head>
-
 <body class="pagina-planos">
-
     <header class="cabecalho-planos">
-        <a href="index.html" class="logo-planos">
-            Multi<span>Línguas</span>
-        </a>
-
+        <a href="index.html" class="logo-planos">Multi<span>Línguas</span></a>
         <nav class="navegacao">
             <a href="index.html">Início</a>
             <a href="nossosrecursos.html">Recursos</a>
             <a href="comofunciona.html">Como funciona</a>
-            <a href="sobre.html">Sobre o projeto</a>
-            <a href="planos.html" class="ativo">Nossos planos</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="planos.html" class="ativo">Planos</a>
         </nav>
     </header>
 
     <main>
-        <section class="introducao-planos">
-            <span class="etiqueta-planos">APRENDA SEM FRONTEIRAS</span>
-
-            <h1>Escolha o plano ideal para <span>você</span></h1>
-
-            <p>
-                Pratique idiomas, converse com mais confiança
-                e acompanhe sua evolução em um só lugar.
-            </p>
+        <section class="intro-planos">
+            <div class="intro-conteudo">
+                <span class="badge-intro">// SISTEMA DE ASSINATURAS</span>
+                <h1>Escolha seu <span>plano ideal</span></h1>
+                <p>Pratique idiomas, converse com confiança e acompanhe sua evolução em um só lugar.</p>
+            </div>
         </section>
 
-        <section class="lista-planos">
+        <section class="container-planos">
+            <div class="planos-grid">
+                <!-- PLANO 1: GRATUITO -->
+                <article class="plano-card plano-basico">
+                    <div class="plano-header">
+                        <div class="plano-icone">🌱</div>
+                        <h2>Gratuito</h2>
+                        <p class="plano-subtitulo">Para iniciantes</p>
+                    </div>
+                    <div class="plano-preco">
+                        <span class="valor">R$ 0</span>
+                        <span class="periodo">sempre gratuito</span>
+                    </div>
+                    <ul class="plano-beneficios">
+                        <li>Acesso à plataforma</li>
+                        <li>Prática básica de vocabulário</li>
+                        <li>Até 5 traduções/dia</li>
+                        <li>Comunidade de usuários</li>
+                    </ul>
+                    <button class="btn-plano" onclick="abrirCheckout('gratuito')">Começar Agora</button>
+                </article>
 
-            <!-- PLANO GRATUITO -->
-            <article class="card-plano">
-                <div class="icone-plano">🌱</div>
+                <!-- PLANO 2: ESTUDANTE VIP (DESTAQUE) -->
+                <article class="plano-card plano-vip destaque">
+                    <div class="plano-badge">★ MAIS POPULAR ★</div>
+                    <div class="plano-header">
+                        <div class="plano-icone">⚡</div>
+                        <h2>Estudante VIP</h2>
+                        <p class="plano-subtitulo">Crescimento acelerado</p>
+                    </div>
+                    <div class="plano-preco destaque-preco">
+                        <span class="valor">R$ 19,90</span>
+                        <span class="periodo">por mês</span>
+                    </div>
+                    <ul class="plano-beneficios">
+                        <li>Recursos ampliados</li>
+                        <li>Tradução ilimitada</li>
+                        <li>Prática de conversação IA</li>
+                        <li>Dicionário personalizado</li>
+                        <li>Relatórios detalhados</li>
+                        <li>Acesso prioritário</li>
+                    </ul>
+                    <button class="btn-plano btn-vip" onclick="abrirCheckout('vip')">Escolher VIP</button>
+                    <p class="economia">Economize 20% com pagamento anual</p>
+                </article>
 
-                <h2>Gratuito</h2>
-                <p class="descricao-plano">
-                    Para começar sua jornada nos idiomas.
-                </p>
-
-                <div class="preco-plano">
-                    <strong>R$ 0</strong>
-                    <span>/ sempre</span>
-                </div>
-
-                <ul class="beneficios-plano">
-                    <li>✓ Acesso inicial à plataforma</li>
-                    <li>✓ Prática de vocabulário</li>
-                    <li>✓ Recursos básicos de tradução</li>
-                    <li>✓ Acompanhamento inicial</li>
-                </ul>
-
-                <button class="botao-plano"
-                    onclick="selecionarPlano('Gratuito')">
-                    Começar grátis
-                </button>
-            </article>
-
-            <!-- PLANO ESTUDANTE -->
-            <article class="card-plano destaque-plano">
-                <span class="selo-plano">PARA ESTUDANTES</span>
-
-                <div class="icone-plano">🚀</div>
-
-                <h2>Estudante VIP</h2>
-                <p class="descricao-plano">
-                    Para quem quer evoluir e praticar mais.
-                </p>
-
-                <div class="preco-plano">
-                    <strong>R$ 19,90</strong>
-                    <span>/ mês</span>
-                </div>
-
-                <ul class="beneficios-plano">
-                    <li>✓ Recursos ampliados de tradução</li>
-                    <li>✓ Prática de conversação</li>
-                    <li>✓ Dicionário personalizado</li>
-                    <li>✓ Relatórios de evolução</li>
-                    <li>✓ Histórico de aprendizagem</li>
-                </ul>
-
-                <button class="botao-plano botao-destaque"
-                    onclick="selecionarPlano('Estudante VIP')">
-                    Escolher VIP
-                </button>
-            </article>
-
-            <!-- PLANO INSTITUCIONAL -->
-            <article class="card-plano">
-                <div class="icone-plano">🎓</div>
-
-                <h2>Institucional</h2>
-                <p class="descricao-plano">
-                    Para escolas, professores e turmas.
-                </p>
-
-                <div class="preco-plano">
-                    <strong>Sob consulta</strong>
-                </div>
-
-                <ul class="beneficios-plano">
-                    <li>✓ Painel para professores</li>
-                    <li>✓ Relatórios de desempenho</li>
-                    <li>✓ Monitoramento de vocabulário</li>
-                    <li>✓ Acompanhamento das turmas</li>
-                    <li>✓ Gestão de estudantes</li>
-                </ul>
-
-                <button class="botao-plano"
-                    onclick="selecionarPlano('Institucional')">
-                    Tenho interesse
-                </button>
-            </article>
-
+                <!-- PLANO 3: PREMIUM PROFISSIONAL -->
+                <article class="plano-card plano-premium">
+                    <div class="plano-header">
+                        <div class="plano-icone">🎓</div>
+                        <h2>Premium</h2>
+                        <p class="plano-subtitulo">Para profissionais</p>
+                    </div>
+                    <div class="plano-preco">
+                        <span class="valor">R$ 49,90</span>
+                        <span class="periodo">por mês</span>
+                    </div>
+                    <ul class="plano-beneficios">
+                        <li>Todos os recursos VIP</li>
+                        <li>IA avançada 24/7</li>
+                        <li>Certificados de conclusão</li>
+                        <li>Suporte priority email</li>
+                        <li>Recursos corporativos</li>
+                        <li>Integração com apps</li>
+                    </ul>
+                    <button class="btn-plano" onclick="abrirCheckout('premium')">Assinar Premium</button>
+                </article>
+            </div>
         </section>
 
-        <section class="duvidas-planos">
-            <h2>Aprender um idioma ficou mais simples.</h2>
-            <p>
-                Desenvolva seu vocabulário, pratique conversação
-                e acompanhe seu progresso no seu ritmo.
-            </p>
+        <!-- COMPARAÇÃO DE PLANOS -->
+        <section class="secao-comparacao">
+            <h2>Compare os planos</h2>
+            <div class="tabela-comparacao">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Recurso</th>
+                            <th>Gratuito</th>
+                            <th>Estudante VIP</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Traduções/dia</td>
+                            <td>Até 5</td>
+                            <td>Ilimitado</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td>Prática de conversação</td>
+                            <td>❌</td>
+                            <td>✓ IA</td>
+                            <td>✓ IA Avançada</td>
+                        </tr>
+                        <tr>
+                            <td>Dicionário personalizado</td>
+                            <td>❌</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Relatórios de progresso</td>
+                            <td>Básico</td>
+                            <td>Detalhado</td>
+                            <td>Completo</td>
+                        </tr>
+                        <tr>
+                            <td>Certificados</td>
+                            <td>❌</td>
+                            <td>❌</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Suporte</td>
+                            <td>Comunidade</td>
+                            <td>Email</td>
+                            <td>Priority 24/7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-            <a href="comofunciona.html" class="link-como-funciona">
-                Descubra como funciona →
-            </a>
+        <!-- DÚVIDAS FREQUENTES -->
+        <section class="secao-faq">
+            <h2>Dúvidas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-titulo" onclick="toggleFaq(this)">
+                        <span>Como faço para cancelar minha assinatura?</span>
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Você pode cancelar sua assinatura a qualquer momento no painel de configurações. O cancelamento é imediato e sem multas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-titulo" onclick="toggleFaq(this)">
+                        <span>Há período de teste gratuito?</span>
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Todos os planos pagos oferecem 7 dias de teste gratuito. Sem necessidade de cartão de crédito para começar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-titulo" onclick="toggleFaq(this)">
+                        <span>Qual é a diferença entre VIP e Premium?</span>
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>VIP é ideal para estudantes com recursos essenciais. Premium inclui IA avançada, certificados e suporte priority 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-titulo" onclick="toggleFaq(this)">
+                        <span>Posso trocar de plano depois?</span>
+                        <span class="faq-icone">+</span>
+                    </button>
+                    <div class="faq-resposta">
+                        <p>Sim! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. A diferença será ajustada proporcionalmente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="secao-cta">
+            <div class="cta-conteudo">
+                <h2>Pronto para começar?</h2>
+                <p>Escolha seu plano e inicie sua jornada de aprendizado agora mesmo.</p>
+                <button class="btn-cta" onclick="abrirCheckout('vip')">Escolher Plano</button>
+            </div>
         </section>
     </main>
 
     <footer class="rodape-planos">
-        <p>© 2026 MultiLínguas — Aprender conecta o mundo.</p>
+        <p>© 2026 MultiLínguas — Conectando o mundo através do idioma.</p>
     </footer>
 
-    <script>
-        function selecionarPlano(nome) {
-            alert(
-                "Você selecionou o plano " + nome +
-                "! A próxima etapa será implementada em breve."
-            );
-        }
-    </script>
+    <!-- MODAL CHECKOUT -->
+    <div id="modalCheckout" class="modal-overlay" style="display: none;">
+        <div class="modal-conteudo">
+            <button class="modal-fechar" onclick="fecharCheckout()">✕</button>
+            
+            <h2 id="modalTitulo">Confirmar Assinatura</h2>
+            <p id="modalDescricao" class="modal-desc"></p>
+            
+            <div class="modal-resumo">
+                <div class="resumo-item">
+                    <span>Plano:</span>
+                    <strong id="resumoPlano">-</strong>
+                </div>
+                <div class="resumo-item">
+                    <span>Valor:</span>
+                    <strong id="resumoValor">R$ 0</strong>
+                </div>
+                <div class="resumo-item">
+                    <span>Período:</span>
+                    <strong id="resumoPeriodo">-</strong>
+                </div>
+            </div>
 
+            <div class="modal-tabs">
+                <button class="tab-btn ativo" onclick="mudarTab(this, 'email')">Email</button>
+                <button class="tab-btn" onclick="mudarTab(this, 'cartao')">Cartão de Crédito</button>
+            </div>
+
+            <!-- ABA EMAIL -->
+            <div id="tab-email" class="tab-conteudo ativo">
+                <form class="form-checkout">
+                    <div class="form-grupo">
+                        <label>Email</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="João Silva" required>
+                    </div>
+                    <button type="button" class="btn-modal-acao" onclick="processarEmail()">
+                        Continuar por Email
+                    </button>
+                </form>
+            </div>
+
+            <!-- ABA CARTÃO -->
+            <div id="tab-cartao" class="tab-conteudo">
+                <form class="form-checkout">
+                    <div class="form-grupo">
+                        <label>Email</label>
+                        <input type="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>Nome no Cartão</label>
+                        <input type="text" placeholder="JOÃO SILVA" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>Número do Cartão</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatarCartao(this)">
+                    </div>
+                    <div class="form-grupo-inline">
+                        <div class="form-grupo">
+                            <label>Validade</label>
+                            <input type="text" placeholder="MM/AA" maxlength="5" oninput="formatarValidade(this)">
+                        </div>
+                        <div class="form-grupo">
+                            <label>CVV</label>
+                            <input type="text" placeholder="123" maxlength="3" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-modal-acao btn-sucesso" onclick="processarCartao()">
+                        Pagar Agora
+                    </button>
+                </form>
+            </div>
+
+            <p class="modal-disclaimer">Seus dados estão protegidos com criptografia SSL 256-bit.</p>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICAÇÃO -->
+    <div id="toast" class="toast"></div>
+
+    <script src="planos.js"></script>
 </body>
 </html>
